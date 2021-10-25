@@ -6,11 +6,14 @@
 package dmacc.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import dmacc.beans.HouseType;
 
 
 /**
  * @author AnthonT
  *
  */
-
-public interface HouseTypeRepository extends JpaRepository<HouseTypeRepository, Long> { }
+@Repository
+public interface HouseTypeRepository extends JpaRepository<HouseType, Long> { }
