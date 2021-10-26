@@ -22,7 +22,7 @@ public class BeanConfiguration {
 		HouseType bean = new HouseType();
 		return bean;
 	}
-	
+	@Bean
 	public Address address() {
 		Address bean = new Address("777 Rainbow Road", "Carroll", "IA");
 		return bean;

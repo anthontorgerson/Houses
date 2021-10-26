@@ -27,7 +27,7 @@ public class HousesApplication implements CommandLineRunner{
 	}
 	
 	@Autowired
-	HouseType repo;
+	HouseTypeRepository repo;
 
 	@Override
 	public void run(String... args) throws Exception {
@@ -35,7 +35,7 @@ public class HousesApplication implements CommandLineRunner{
 		ApplicationContext appContext = new AnnotationConfigApplicationContext(BeanConfiguration.class);
 		
 		//Using an existing bean
-		HouseType c = appContext.getBean("houseType", HouseType.class);
+		HouseType c = appContext.getBean("contact", HouseType.class);
 		c.setSize("medium");
 		repo.save(c);
 		
